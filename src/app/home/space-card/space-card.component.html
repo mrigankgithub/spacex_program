@@ -1,0 +1,58 @@
+<div class="card_main_wrapper">
+    <figure class="card_img">
+        <img [src]="cardDetails?.links?.mission_patch" alt="">
+    </figure>
+    <div class="info_wrap">
+        <h3 class="card_title">
+            {{cardDetails?.mission_name}} #{{cardDetails?.flight_number}}
+        </h3>
+        <ul class="list_wrap">
+            <li class="list">
+                <h3 class="key">
+                    Mission Ids
+                </h3>
+                    <ul *ngIf="cardDetails?.mission_id.length">
+                        <li *ngFor="let id of cardDetails?.mission_id">
+                            <p class="value">
+                                {{id}}
+                            </p>
+                        </li>
+                    </ul>
+                    <ul *ngIf="cardDetails?.mission_id.length == 0">
+                        <li>
+                            <p class="value">
+                                No Data Available
+                            </p>
+                        </li>
+                    </ul>
+              
+            </li>
+            <li class="list">
+                <h3 class="key">
+                    Launch Year
+                </h3>
+                <p class="value">
+                   {{cardDetails?.launch_year}}
+                </p>
+            </li>
+
+            <li class="list">
+                <h3 class="key">
+                   Successful Launch
+                </h3>
+                <p class="value">
+                   {{cardDetails?.launch_success == true ?  "True" : "False"}}
+                </p>
+            </li>  
+
+            <li class="list">
+                <h3 class="key">
+                   Successful Landing
+                </h3>
+                <p class="value">
+                   {{cardDetails?.launch_landing == true ? 'True' : 'False'}}
+                </p>
+            </li>  
+        </ul>
+    </div>
+</div>

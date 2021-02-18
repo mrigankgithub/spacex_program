@@ -1,0 +1,96 @@
+:host ::ng-deep{
+    .check_wrapper{
+        .mat-radio-group {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            @media(max-width: 768px) {
+                justify-content: flex-start;
+             }
+        }
+        .mat-checkbox {
+            display: block;
+            margin-bottom: 20px;
+            width: 45%;
+        }
+        .mat-checkbox-layout {
+            width: 100%;
+        }
+        .mat-checkbox-label {
+            background: #ade4ad;
+            padding: 5px;
+            font-size: 12px;
+            font-family: "poppins";
+            border-radius: 6px;
+            width: 100%;
+            text-align: center;
+            @media(max-width: 768px) {
+               margin-right: 15px;
+             }
+        }
+        .mat-checkbox-inner-container{
+            display: none;
+        }
+        .mat-radio-button {
+            display: flex;
+            margin-bottom: 20px;
+            width: 45%;
+            margin-left: 0;
+            @media(max-width: 768px) {
+               width: fit-content;
+            }
+        }
+        .mat-radio-label-content {
+            width: 100%;
+            text-align: center;
+            padding-left: 0;
+        }
+        .mat-checkbox-checked{
+             .mat-checkbox-label {
+                background: yellow;
+            }
+        }
+    }
+}
+
+.filter_main_wrapper {
+    max-width: 225px;
+    background: #ffff;
+    border-radius: 8px;
+    box-shadow: 4px 4px 16px 0 rgb(0 0 0 / 4%);
+    padding: 20px;
+    @media(max-width: 768px) {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .top_head {
+        font-size: 16px;
+        font-weight: 500;
+        color: #3a3a3a;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5px;
+    }
+    .content_wrapper{
+        .sec_wrap{
+            .sec_title {
+                font-size: 15px;
+                font-weight: 500;
+                font-size: 15px;
+                font-weight: 500;
+                border-bottom: 1px solid #eee;
+                text-align: center;
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+            }
+            .check_wrapper {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<div class="page_main_wrapper">
+    <div class="container">
+        <div class="top_haed">
+            <h3>SpaceX Launch Programs</h3>
+        </div>
+        <div class="inner_content_wrapper">
+            <div class="left_col">
+                <app-filter (filterEvent)="catchFilterData($event)"></app-filter>
+            </div>
+            <div class="right_col">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4" *ngFor="let item of spaceXData">
+                        <app-space-card [cardDetails]="item"></app-space-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="no_data">
+            <h5>Developed By: Mrigank</h5>
+        </div>
+    </div>
+</div>

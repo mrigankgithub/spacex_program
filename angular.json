@@ -121,8 +121,5 @@
       }
     }
   },
-  "defaultProject": "space-x",
-  "cli": {
-    "analytics": "bea058e8-d783-468e-8b96-b39a2e4e6e4f"
-  }
+  "defaultProject": "space-x"
 }
